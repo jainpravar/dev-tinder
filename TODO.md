@@ -1,0 +1,9 @@
+- create server file.
+- create apis for signup, login, sendConnectionRequest.
+- create middleware for api error handling.
+- encript the password in signup api using bcrypt package.
+- create mongodb devTinder collection.
+- create config file.
+- create user model.
+- validate model properties by mongoose validator properties.
+- implement JWT  token based authantication.  
