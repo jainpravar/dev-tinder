@@ -7,7 +7,7 @@
 
 ## userRouter
 - get  /user/feed
-- get  /user/requests 
+- get  /user/requests/recived
 - post /user/connections
 
 ## profileRouter

@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const validator = require("validator");
 const { userAuth } = require("../middlewares/auth");
 const { validateProfileEditData } = require("../utils/validator");
-const User = require("../models/User");
+const User = require("../models/user");
 
 const profileRouter = express.Router();
 
