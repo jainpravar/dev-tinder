@@ -20,3 +20,5 @@
 - post /connection/review/ignored/:requestId
 - post /connection/send/intrested/:userId
 - post /connection/send/rejected/:userId
+
+- accepted | rejected | interested | rejected
