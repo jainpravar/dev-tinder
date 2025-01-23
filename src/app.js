@@ -3,8 +3,11 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const connectDB = require("./config/database");
 
-
 const app = express();
+
+require('dotenv').config();
+
+require("./utils/cronjob");
 
 app.use(
   cors({
@@ -29,8 +32,8 @@ app.use("/", userRouter);
 connectDB()
   .then(() => {
     console.log("database connected successfully!!");
-    app.listen("7777", () => {
-      console.log("code is running on port 7777");
+    app.listen(process.env.PORT, () => {
+      console.log("code is running on port "+ process.env.PORT);
     });
   })
   .catch((err) => {
